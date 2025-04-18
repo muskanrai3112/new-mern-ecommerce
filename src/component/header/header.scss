@@ -1,0 +1,102 @@
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__rightMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__leftTitle,
+  &__rightMenu a {
+    font-size: 14px;
+    font-weight: 500;
+    // color: #808080;
+    color: #fff;
+    line-height: 24px;
+  }
+  &__rightMenu {
+    a {
+      text-decoration: none;
+      border-right: 1px solid #8080804a;
+      padding-right: 8px;
+      transition: all 0.8s;
+      &:hover {
+        color: #ff4400d9;
+      }
+    }
+  }
+}
+.header {
+  // margin-top: 15px;
+  border-top: 1px solid #8080804a;
+  border-bottom: 1px solid #8080804a;
+  padding: 12px;
+  background: #ff4400;
+}
+// css for navbar...
+.navbar {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 15px;
+  background-color: #fff;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    &-col3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      &-imgs {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        cursor:pointer;
+        svg {
+          height: 24px;
+          width: 24px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  &__inputBox {
+    min-width: 350px;
+    width: 100%;
+    background: #80808036;
+    color: #000;
+  }
+  &__searchBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &__searchIcon{
+    right: 5px;
+    position: absolute;
+    top: 10px;
+    svg{
+        height:18px;
+        width:20px;
+        object-fit:contain;
+    }
+  }
+  &__searchInput{
+    position: relative;
+  }
+}
+.btn.navBtn {
+  background: none;
+  color: #000;
+  box-shadow: none;
+  padding: 8px;
+  transition:all 0.5s;
+  &:hover{
+    color:#ff5f26;
+  }
+}
+.MuiBadge-badge{
+    background-color: #ff4400!important;
+}
